@@ -1,0 +1,9 @@
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.fa-ethereum{
+    font-size:40px ;
+    color: blueviolet;
+}
