@@ -33,6 +33,9 @@ export class AppComponent {
       backgroundColor: 'aliceblue',
     },
   ];
-
- 
+  onChangeBgc(theme: string) {
+    this.theme =theme;
+    this.users[0].backgroundColor =theme;
+    this.users[1].backgroundColor =theme;
+  }
 }

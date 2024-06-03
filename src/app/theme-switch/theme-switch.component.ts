@@ -9,8 +9,10 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
   styleUrl: './theme-switch.component.css',
 })
 export class ThemeSwitchComponent {
-  @Input() theme: string = 'red';
+  @Input() theme: string = 'lightblue';
   @Output() themeChange = new EventEmitter<string>();
-
- 
+  onChangeTheme() {
+    this.themeChange.emit(this.theme);
+    console.log(this.themeChange.emit(this.theme));
+  }
 }

@@ -11,9 +11,4 @@ import { CommonModule } from '@angular/common';
 })
 export class CardsComponent {
   @Input({ required: true }) user!: User;
-  @Output() changeBackround = new EventEmitter<User>();
-
-  onChange(){
-    this.changeBackround.emit(this.user)
-  }
 }
